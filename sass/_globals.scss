@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  background-color: $bg-color;
+  color: $mfont-color;
+  font-size: $font-size;
+  font-family: $main-font;
+}
+
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  text-align: center;
+  max-width: 1500px;
+  width: 100%;
+
+  @include desktop {
+    align-items: flex-start;
+  }
+}

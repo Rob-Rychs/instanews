@@ -1,0 +1,8 @@
+footer {
+  text-align: center;
+  color: $fgrey-color;
+
+  @include desktop {
+    margin: $padding;
+  }
+}

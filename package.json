@@ -1,0 +1,30 @@
+{
+  "name": "instanews",
+  "version": "1.0.0",
+  "description": "Instanews client for NYT articles",
+  "main": "index.html",
+  "repository": "https://github.com/Rob-Rychs/instanews.git",
+  "author": "Rob-Rychs",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "selectric": "^1.11.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^4.0.0",
+    "gulp-optimize-js": "^1.1.0",
+    "gulp-prettyerror": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "pump": "^1.0.2"
+  }
+}

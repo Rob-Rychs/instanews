@@ -1,0 +1,41 @@
+.dropdown-menu {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  @include tablet {
+    margin-right: 100px;
+  }
+  p{
+    margin-bottom: $padding;
+  }
+}
+
+.articles {
+  display: none;
+
+  li {
+    flex: 0 1 100%;
+    max-width: 100%;
+    @media (min-width: 480px) {
+      flex: 0 1 50%;
+      max-width: 50%;
+    }
+  }
+  @include desktop {
+    flex: 0 1 25%;
+    max-width: 25%;
+  }
+  
+}
+
+.loader {
+  display: none;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
