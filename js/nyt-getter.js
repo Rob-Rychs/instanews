@@ -1,6 +1,7 @@
 $(function(){
 
-  $('#category').on('change', function(){
+  $('#category').on('change', function(event){
+    event.preventDefault();
     $('.articles-list').empty();
     $('.main-nav').css({'height':'auto', 'justify-content':'flex-start'});
     $('.articles').css('display', 'flex');
@@ -26,7 +27,7 @@ $(function(){
         var imgurl = value.multimedia[4].url;
         var txt = value['abstract'];
         var link = value.url;
-        var listitem = '<li class="article-item" style="background-image:url('+imgurl+')"><a href="'+link+'" target="blank"><div class="txt"><p>'+txt+'</p></div></a></li>';
+        var listitem = '<li class="article-item"><a class="article-link" href="'+link+'" target="blank"><div class="article-wrapper" style="background-image:url('+imgurl+')"><div class="article-text"><p>'+txt+'</p></div></div></a></li>';
         console.log(listitem);
         console.log(imgurl);
 
