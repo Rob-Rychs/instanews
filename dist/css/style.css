@@ -549,7 +549,16 @@ body {
   -ms-flex-item-align: end;
       align-self: flex-end;
   background-color: rgba(0, 0, 0, 0.7);
-  width: 100%; }
+  width: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
+  overflow: hidden; }
+
+.article-wrapper:hover .article-text {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1); }
 
 .loader {
   display: none;
@@ -560,28 +569,6 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
-
-@-webkit-keyframes slideOutUp {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0); } }
-
-@keyframes slideOutUp {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0); } }
-
-.slideOutUp {
-  -webkit-animation-name: slideOutUp;
-          animation-name: slideOutUp; }
 
 /*======================================
   Selectric

@@ -53,8 +53,19 @@
   align-self: flex-end;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
+  transform: scaleY(0);
+  // height: 0;
+  // bottom:0;
+  // left:0;
+  transition: all .9s ease;
+  overflow: hidden;
 }
 
+.article-wrapper:hover .article-text{
+  // bottom: 0;
+  transform: scaleY(1);
+  // height: 35%;
+}
 
 .loader {
   display: none;
@@ -65,17 +76,18 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
-//slideOutUp styles... chyea
-@keyframes slideOutUp {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
+// .article-text display on hover effect looks wayyyy better with transform scaleY() than using a fixed height percentage
+// keyfram animation for .article-text using translate3d() called slideOutUp... chyea
+// @keyframes slideOutUp {
+//   from {
+//     transform: translate3d(0, 0, 0);
+//   }
 
-  to {
-    visibility: hidden;
-    transform: translate3d(0, -100%, 0);
-  }
-}
-.slideOutUp {
-  animation-name: slideOutUp;
-}
+//   to {
+//     visibility: hidden;
+//     transform: translate3d(0, -100%, 0);
+//   }
+// }
+// .slideOutUp {
+//   animation-name: slideOutUp;
+// }
