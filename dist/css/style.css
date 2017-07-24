@@ -548,6 +548,8 @@ body {
 .article-text {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  text-align: left;
+  padding: 5px;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   -webkit-transform: scaleY(0);
@@ -555,6 +557,9 @@ body {
   -webkit-transition: all .9s ease;
   transition: all .9s ease;
   overflow: hidden; }
+  .article-text p {
+    width: 95%;
+    margin: 0 auto; }
 
 .article-wrapper:hover .article-text {
   -webkit-transform: scaleY(1);

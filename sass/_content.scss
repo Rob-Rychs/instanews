@@ -51,6 +51,8 @@
 
 .article-text {
   align-self: flex-end;
+  text-align: left;
+  padding:5px;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   transform: scaleY(0);
@@ -59,6 +61,10 @@
   // left:0;
   transition: all .9s ease;
   overflow: hidden;
+  p {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
 
 .article-wrapper:hover .article-text{
