@@ -32,7 +32,7 @@ $('.hn').on('click', function(){
 
           $('.articles-list').append(storyitem);
 
-          //this is where we started to go a little nuts trying to scrape the first image from the story URL
+          //this is where we started to go a little nuts trying to scrape the first image from the story URL, try looking at https://developer.yahoo.com/yql/guide/two-minute-tutorial.html
           // var firstImage = $.load(storyURL).getElementsByTagName("img")[0];
           // var firstImage = fetch(storyURL).getElementsByTagName("img")[0];
           // console.log(firstImage.src);
