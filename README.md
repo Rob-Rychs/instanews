@@ -1,6 +1,6 @@
 # README
 
-This is the Instanews app, a news client for the nyt API. 
+This is the Instanews app, a news client for the nyt API.
 
 ![homepage](https://cdn.pbrd.co/images/GCtydpl.png)
 
