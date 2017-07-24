@@ -19,7 +19,7 @@ $('button').on('click', function(){
   .then((resp) => resp.json()) // Transform the data into json
   .then(function(data) {
    console.log(data); 
-    for (i=0;i<24;i++) { // limit the amout of id's here or get all with data.length 
+    for (i=0;i<48;i++) { // limit the amout of id's here or get all with data.length 
       var storyID = data[i];
       fetch('https://hacker-news.firebaseio.com/v0/item/'+storyID+'.json?print=pretty')
       .then((resp) => resp.json())
