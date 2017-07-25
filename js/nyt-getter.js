@@ -28,7 +28,7 @@ $(function(){
         var imgurl = value.multimedia[4].url;
         var txt = value['abstract'];
         var link = value.url;
-        var listitem = '<li class="article-item"><a class="article-link" href="'+link+'" target="blank"><div class="article-wrapper" style="background-image:url('+imgurl+')"><div class="article-text"><p>'+txt+'</p></div></div></a></li>';
+        var listitem = '<li class="article-item"><a class="article-link" href="'+link+'" target="blank"><div class="article-wrapper fade-in-on-load" style="background-image:url('+imgurl+')"><div class="article-text"><p>'+txt+'</p></div></div></a></li>';
         console.log(listitem);
         console.log(imgurl);
 

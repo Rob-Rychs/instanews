@@ -582,6 +582,24 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
+.fade-in-on-load {
+  -webkit-animation-duration: 2.3s;
+          animation-duration: 2.3s;
+  -webkit-animation-name: fadeInOnLoad;
+          animation-name: fadeInOnLoad; }
+
+@-webkit-keyframes fadeInOnLoad {
+  0%, 50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeInOnLoad {
+  0%, 50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 /*======================================
   Selectric
 ======================================*/
