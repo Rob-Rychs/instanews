@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-
+    margin: 15px;
     .logo_image {
       margin-bottom: $padding;
 
@@ -29,4 +29,9 @@
       align-items: center;
     }
 }
- 
+
+.resized {
+  max-width: 50%;
+  height: 100%;
+  transition: all .9s ease;
+} 

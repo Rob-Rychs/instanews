@@ -4,6 +4,7 @@ $(function(){
     event.preventDefault();
     $('.articles-list').empty();
     $('.main-nav').css({'height':'auto', 'justify-content':'flex-start'});
+    $('.logo_image').addClass('resized');
     $('.articles').css('display', 'flex');
     $('.loader').css('display', 'block');
 
