@@ -39,8 +39,8 @@ $(function(){
         
 
       });
-    }).fail(function(err) {
-      throw err;
+    }).fail(function(){
+       $('.articles-list').append('<li> Sorry there was an error </li>')  
     });
 
   });
