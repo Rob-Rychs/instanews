@@ -32,4 +32,4 @@ Technology summary:
 
 ### branch hn-getter ToDo
 
-- try another methode to get the first img on hn storyURL 
+- try another methode to get the first img on hn storyURL
