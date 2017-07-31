@@ -1,20 +1,30 @@
 'use strict';
-var gulp = require('gulp');
-var autoprefixer = require('gulp-autoprefixer');
-var uglify = require('gulp-uglify');
-// var pump = require('pump');
-// var sourcemaps = require('gulp-sourcemaps');
-var rename = require('gulp-rename');
-var browserSync = require('browser-sync').create();
-var browserify = require('browserify');
-var sass = require('gulp-sass');
-// var concat = require('gulp-concat');
-// var optimizejs = require('gulp-optimize-js');
-// var gutil = require('gulp-util');
-var watch = require('gulp-watch');
-var eslint = require('gulp-eslint');
-var cssnano = require('gulp-cssnano');
-var prettyError = require('gulp-prettyerror');
+const gulp = require('gulp');
+const autoprefixer = require('gulp-autoprefixer');
+const uglify = require('gulp-uglify');
+// const pump = require('pump');
+// const sourcemaps = require('gulp-sourcemaps');
+const rename = require('gulp-rename');
+const browserSync = require('browser-sync').create();
+const browserify = require('browserify');
+const sass = require('gulp-sass');
+// const concat = require('gulp-concat');
+// const optimizejs = require('gulp-optimize-js');
+// const gutil = require('gulp-util');
+const watch = require('gulp-watch');
+const eslint = require('gulp-eslint');
+const cssnano = require('gulp-cssnano');
+const prettyError = require('gulp-prettyerror');
+const babel = require('gulp-babel');
+
+const input = 'js/*.js';
+const output = 'dist/js';
+
+gulp.task('babel', () => {
+    return gulp.src(input)
+        .pipe(babel())
+        .pipe(gulp.dest(output));
+});
 
 // minjs task with lint task completion as dependency for running vs not
 gulp.task('minjs', ['lint'], function() {
