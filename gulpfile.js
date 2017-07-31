@@ -17,18 +17,18 @@ const cssnano = require('gulp-cssnano');
 const prettyError = require('gulp-prettyerror');
 const babel = require('gulp-babel');
 
-const input = 'js/*.js';
-const output = 'dist/js';
-
-gulp.task('babel', () => {
-    return gulp.src(input)
-        .pipe(babel())
-        .pipe(gulp.dest(output));
-});
+// gulp.task('babel', () => {
+//     return gulp.src(input)
+//         .pipe(babel())
+//         .pipe(gulp.dest(output));
+// });
 
 // minjs task with lint task completion as dependency for running vs not
 gulp.task('minjs', ['lint'], function() {
    gulp.src('./js/*.js')
+    .pipe(babel({
+            presets: ['es2015']
+        }))
     .pipe(uglify()) 
     .pipe(rename({ extname: '.min.js' })) 
     .pipe(gulp.dest('./dist/js')) 
