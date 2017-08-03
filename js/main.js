@@ -1,5 +1,10 @@
-$( () =>{
+import $ from 'jquery';
+import 'selectric';
+import {init} from './selectric-init.js';
+import '../sass/style.scss';
 
+$( () =>{
+  init();
   $('#category').on('change', function(event){
     event.preventDefault();
     $('.articles-list').empty();
