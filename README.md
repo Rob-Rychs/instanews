@@ -20,8 +20,4 @@ Technology summary:
 
 ### branch hn-getter ToDo
 
-<<<<<<< HEAD
 - try another methode to get the first img on hn storyURL 
-=======
-- try another methode to get the first img on hn storyURL 
->>>>>>> update README
